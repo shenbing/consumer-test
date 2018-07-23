@@ -1,0 +1,24 @@
+{
+	"classname": "com.codyy.rs.rpc.service.ResQService",
+	"methodname": "login",
+	"datas": [{
+		"casedata": [{
+				"classname": "",
+				"isBean": false,
+				"fields": {
+					"username": "administrator"
+				}
+			},
+			{
+					"classname": "",
+					"isBean": false,
+					"fields": {
+						"password": "E10ADC3949BA59ABBE56E057F20F883E"
+					}
+			}
+		],
+		"asserts": {
+			"type": "com.codyy.rs.rpc.so.AdminUserSo"
+		}
+	}]
+}

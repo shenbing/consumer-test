@@ -1,0 +1,54 @@
+{
+	"classname": "com.codyy.rs.rpc.service.ResQService",
+	"methodname": "login",
+	"datas": 
+	[
+		{
+			"casedata": 
+			[
+				{
+					"classname": "",
+					"isBean": false,
+					"fields": 
+					{
+						"e": "e1"
+					}
+				},
+
+				{
+					"classname": "com.aaron.bean.A",
+					"isBean": true,
+					"fields": 
+					{
+						"a": "a1",
+						"b": 
+						{
+							"classname": "com.aaron.bean.B",
+							"isBean": true,
+							"fields": 
+							{
+								"c": 
+								{
+									"classname": "com.aaron.bean.C",
+									"isBean": true,
+									"fields": 
+									{
+										"e": "e1",
+										"f": 10
+									}
+								},
+
+								"d": "d1"
+							}
+						}
+					}
+				}
+			],
+
+			"asserts": 
+			{
+				"type": "com.codyy.rs.rpc.so.AdminUserSo"
+			}
+		}
+	]
+}
