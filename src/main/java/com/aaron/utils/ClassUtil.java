@@ -4,6 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.aaron.common.MessageInfo;
@@ -64,7 +65,7 @@ public class ClassUtil {
 		}
 		return object;
 	}
-	
+
 	@SuppressWarnings("rawtypes")
 	public static Object getEntityByConstructor(String classname, Object[] fields) {
 		Class<?> clazz = getClass(classname);
@@ -84,10 +85,7 @@ public class ClassUtil {
 	}
 
 	public static String toUpperCaseFirstOne(String s) {
-		if (Character.isUpperCase(s.charAt(0)))
-			return s;
-		else
-			return (new StringBuilder()).append(Character.toUpperCase(s.charAt(0))).append(s.substring(1)).toString();
+		return StringUtils.capitalize(s);
 	}
 
 }
